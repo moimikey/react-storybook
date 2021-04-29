@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: webpack
+    versions:
+    - 3.12.0
+    - 5.24.0
+    - 5.27.2
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
+  - dependency-name: react-test-renderer
+    versions:
+    - 17.0.1
+  - dependency-name: autoprefixer
+    versions:
+    - 9.8.6
+  - dependency-name: webpack-dev-middleware
+    versions:
+    - 2.0.6
+  - dependency-name: file-loader
+    versions:
+    - 2.0.0
